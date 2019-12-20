@@ -1,6 +1,6 @@
-<?php 
+<?php
 if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+    print '<script type="text/javascript">document.getElementById("return").textContent = "' . $_GET['Message'] . '";</script>';
 }
  ?>
 
@@ -18,6 +18,7 @@ if (isset($_GET['Message'])) {
   		<div class="header">
         <div class="example-icon" > <img src="../images/logo.png" alt=""> </div>
         <small>FHS Chemistry Club - Instructor Portal</small>
+        <small id = "return"></small>
   		</div>
       <hr>
   		<div class="content">
