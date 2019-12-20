@@ -12,8 +12,9 @@ body {
 .container {
   position: relative;
   width: 450px;
-  margin: 70px auto;
+  margin: 150px auto;
   animation: myanim 2.3s;
+  display:block;
 }
 .form-style {
   background: #f9f9f9;
