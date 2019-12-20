@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">document.getElementById("return").textContent = "' . $_GET['Message'] . '";</script>';
+    print '<script type="text/javascript">document.getElementById("return").content = "' . $_GET['Message'] . '";</script>';
 }
  ?>
 
