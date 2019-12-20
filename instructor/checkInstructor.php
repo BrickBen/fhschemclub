@@ -11,6 +11,13 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
+function goback()
+{
+	header(&quot;Location: {$_SERVER['HTTP_REFERER']}&quot;);
+	exit;
+}
+
+
 $sql = "SELECT * FROM instructor_data";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
@@ -19,10 +26,7 @@ if($result = mysqli_query($link, $sql)){
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
           }else{
-            $previous = "javascript:history.go(-1)";
-            if(isset($_SERVER['HTTP_REFERER'])) {
-                $previous = $_SERVER['HTTP_REFERER'];
-              }
+            goback();
           }
     }
 }
