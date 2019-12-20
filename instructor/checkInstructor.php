@@ -18,6 +18,11 @@ if($result = mysqli_query($link, $sql)){
         foreach($row as $column => $value) {
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
+          }else{
+            $previous = "javascript:history.go(-1)";
+            if(isset($_SERVER['HTTP_REFERER'])) {
+                $previous = $_SERVER['HTTP_REFERER'];
+              }
           }
     }
 }
