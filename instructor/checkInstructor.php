@@ -23,6 +23,7 @@ if($result = mysqli_query($link, $sql)){
           }else{
             echo 'invalid username or password';
             header("location:index.html");
+            echo 'invalid username or password';
           }
     }
 }
