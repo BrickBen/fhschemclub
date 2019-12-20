@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">document.getElementById("return").content = "' . $_GET['Message'] . '";</script>';
+    print '<script type="text/javascript">document.getElementById("return").style.visibility = "visible"; document.getElementById("return").style.display = "block";</script>';
 }
  ?>
 
@@ -18,7 +18,7 @@ if (isset($_GET['Message'])) {
   		<div class="header">
         <div class="example-icon" > <img src="../images/logo.png" alt=""> </div>
         <small>FHS Chemistry Club - Instructor Portal</small>
-        <small id = "return"></small>
+        <p id = "return">Invaid Username or Password</p>
   		</div>
       <hr>
   		<div class="content">

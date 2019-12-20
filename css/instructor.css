@@ -5,6 +5,12 @@ body {
   background: linear-gradient(to left, #00ca88, #00c3ff, #2a2ab5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Roboto', sans-serif;
 }
+#return{
+  color:red;
+  visibility: hidden;
+  display:none;
+}
+
 /** Form Style **/
 .form-style hr {
   border-color: #fdfdfd;
