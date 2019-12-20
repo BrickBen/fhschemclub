@@ -1,10 +1,78 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/master.css">
     <meta charset="utf-8">
     <title>Fishers Chemistry Club</title>
   </head>
   <body>
-    Yo
+    <nav class="nav">
+          <div class="container">
+              <div class="logo">
+                  <a href="#"> <img src="images/logo.png" alt="" class = "logo" id = "logo"> <p id = "navLogo">FHS Chemistry Club</p> </a>
+              </div>
+              <div id="mainListDiv" class="main_list">
+                  <ul class="navlinks">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Join</a></li>
+                      <li><a href="#">Calendar</a></li>
+                      <li><a href="#">Labs</a></li>
+                  </ul>
+              </div>
+              <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+          </div>
+      </nav>
+
+      <section class="home">
+      </section>
+      <div style="height: 1000px">
+          <!-- just to make scrolling effect possible -->
+  			<h2 class="myH2">What is this ?</h2>
+  			<p class="myP">This is a responsive fixed navbar animated on scroll</p>
+  			<p class="myP">I took inspiration from  ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
+  			and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
+  			<p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+  			<p class="myP">Albi</p>
+  				<p class="myP">
+
+  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  			</p>
+      </div>
+
+  <!-- Jquery needed -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+      <script>
+          $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                  $('.nav').addClass('affix');
+                  console.log("OK");
+                  document.querySelector("#logo").style.visibility = "hidden";
+                  document.querySelector("#logo").style.display = "none";
+                  document.querySelector("#navLogo").style.visibility = "visible";
+                  document.querySelector("#navLogo").style.display = "inline";
+              } else {
+                  $('.nav').removeClass('affix');
+                  document.querySelector("#logo").style.visibility = "visible";
+                  document.querySelector("#logo").style.display = "block";
+                  document.querySelector("#navLogo").style.visibility = "hidden";
+                  document.querySelector("#navLogo").style.display = "none";
+
+              }
+          });
+          document.querySelector("#navLogo").style.visibility = "hidden";
+          document.querySelector("#navLogo").style.display = "none";
+      </script>
   </body>
 </html>
