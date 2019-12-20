@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Instructor - Login</title>
+    <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/instructor.css">
   </head>
   <body>
