@@ -11,11 +11,6 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-function goback()
-{
-	header(&quot;Location: {$_SERVER['HTTP_REFERER']}&quot;);
-	exit;
-}
 
 
 $sql = "SELECT * FROM instructor_data";
@@ -26,7 +21,8 @@ if($result = mysqli_query($link, $sql)){
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
           }else{
-            goback();
+            echo 'invalid username or password';
+            header("location:index.html");
           }
     }
 }
