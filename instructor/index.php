@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">document.getElementById("return").setAttribute("style","display:block !important;visibility:visible !important");</script>';
+    print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
 }
  ?>
 
@@ -18,7 +18,7 @@ if (isset($_GET['Message'])) {
   		<div class="header">
         <div class="example-icon" > <img src="../images/logo.png" alt=""> </div>
         <small>FHS Chemistry Club - Instructor Portal</small>
-        <p id = "return">Invaid Username or Password</p>
+        <p id = "return"></p>
   		</div>
       <hr>
   		<div class="content">
