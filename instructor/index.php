@@ -1,9 +1,3 @@
-<?php
-if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
-}
- ?>
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -43,5 +37,11 @@ if (isset($_GET['Message'])) {
   </div>
 
   </body>
+  <?php
+  if (isset($_GET['Message'])) {
+      print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
+  }
+   ?>
+
 
 </html>
