@@ -3,7 +3,7 @@
 
 $user = $_POST['user'];
 $pass = $_POST['pass'];
-
+$Message = "Invalid Username or Password"
 
 
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_userdata");
@@ -21,9 +21,7 @@ if($result = mysqli_query($link, $sql)){
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
           }else{
-            echo 'invalid username or password';
-            header("location:index.html");
-            echo 'invalid username or password';
+            header("Location: index.php?Message=" . urlencode($Message));
           }
     }
 }
