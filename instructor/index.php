@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['Message'])) {
-    print '<script type="text/javascript">document.getElementById("return").style.visibility = "visible"; document.getElementById("return").style.display = "block";</script>';
+    print '<script type="text/javascript">document.getElementById("return").setAttribute("style","display:block !important;visibility:visible !important");</script>';
 }
  ?>
 
