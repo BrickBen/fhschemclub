@@ -3,7 +3,7 @@
 
 $user = $_POST['user'];
 $pass = $_POST['pass'];
-$Message = "Invalid Username or Password"
+$Message = "Invalid Username or Password";
 
 
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_userdata");
