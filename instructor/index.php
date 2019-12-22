@@ -18,12 +18,12 @@
       <hr>
   		<div class="content">
           <label for="inp" class="inp">
-            <input type="text" id="inp" placeholder="&nbsp;" name = "user">
+            <input type="text" id="user" placeholder="&nbsp;" name = "user">
             <span class="label">Username</span>
             <span class="border"></span>
           </label>
           <label for="inp" class="inp">
-            <input type="password" id="inp" placeholder="&nbsp;" name = "pass">
+            <input type="password" id="pass" placeholder="&nbsp;" name = "pass">
             <span class="label">Password</span>
             <span class="border"></span>
           </label>

@@ -1,0 +1,52 @@
+body{
+  /* background: #00ca88; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to left, #007388, #00c3ff, #2a2ab5); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to left, #003468, #00ceff, #2a00b5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: lightgrey;
+}
+
+
+.row {
+     margin-bottom: 20px;
+   }
+
+tr:hover{
+ background-color:lightgrey;
+}
+
+   .button.button-small {
+     height: 30px;
+     line-height: 30px;
+     padding: 0px 10px;
+   }
+
+   td input[type=text],
+   td select {
+     width: 100%;
+     height: 30px;
+     margin: 0;
+     padding: 2px 8px;
+   }
+
+   th:last-child {
+     text-align: right;
+   }
+
+   td:last-child {
+     text-align: right;
+   }
+
+   td:last-child .button {
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     padding: 0px;
+     margin-bottom: 0px;
+     margin-right: 5px;
+     background-color: #FFF;
+   }
+
+   td:last-child .button .fa {
+     line-height: 30px;
+     width: 30px;
+   }
