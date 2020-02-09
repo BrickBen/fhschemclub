@@ -52,7 +52,7 @@
   </body>
   <?php
   if (isset($_GET['Message'])) {
-      print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
+      print '<script type="text/javascript">document.getElementById("return").innerHTML = "In the next 24 hours your username and password will be sent to you by email. Thanks for signing up!";</script>';
   }
    ?>
 
