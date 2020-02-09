@@ -20,6 +20,9 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
 }
+#return{
+  color: green;
+}
     </style>
   </head>
   <body>
@@ -34,7 +37,7 @@
       <div class="loader"></div>
   		<div class="content">
           <label for="inp" class="inp">
-            <input type="email" id="user" placeholder="&nbsp;" name = "email" pattern=".+@hse.k12.in.us" required>
+            <input type="email" id="user" placeholder="&nbsp;" name = "email" required>
             <span class="label">Email</span>
             <span class="border"></span>
           </label>
@@ -47,6 +50,10 @@
   </div>
 
   </body>
-
+  <?php
+  if (isset($_GET['Message'])) {
+      print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
+  }
+   ?>
 
 </html>
