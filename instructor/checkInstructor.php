@@ -22,7 +22,7 @@ if($result = mysqli_query($link, $sql)){
             $inVal = 1;
           }
     }
-    if($inval == 1){
+    if($inVal == 1){
       header("Location: chemicaldata/");
     }else{
       header("Location: index.php?Message=" . urlencode($Message));
