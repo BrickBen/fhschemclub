@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Instructor - Register</title>
     <link rel="shortcut icon" href="../images/logo.png">
-    <link rel="stylesheet" href="../css/instructor.css">
+    <link rel="stylesheet" href="../../css/instructor.css">
   </head>
   <body>
     <div class="container">
