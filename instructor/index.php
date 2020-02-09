@@ -32,7 +32,7 @@
       <hr>
   		<div class="footer">
         <input type="submit" name="submit" value="Login" class="bton login" />
-        <input type="button" name="submit" value="Register" class="bton register" id = "reg" href = "register/"/>
+        <input type="button" name="submit" value="Register" class="bton register" id = "reg"/>
   		</div>
   	</form>
   </div>
@@ -43,6 +43,11 @@
       print '<script type="text/javascript">document.getElementById("return").innerHTML = "Invaid Username or Password";</script>';
   }
    ?>
+   <script type="text/javascript">
+     document.querySelector("#reg").onclick = function(){
+       window.location.href = "register/";
+     };
+   </script>
 
 
 </html>
