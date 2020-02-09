@@ -11,7 +11,7 @@ function randomPassword() {
     }
     return implode($pass); //turn the array into a string
 }
-$user = $_post['verify'];
+$user = $_POST['verify'];
 $pass = randomPassword();
 $insertion = hash('sha256', $user."_".$pass);
 
@@ -31,7 +31,7 @@ if(mysqli_query($link, $sql)){
   Send me an email at lilleben000@hsestudents.org if you have any questions, concerns, or issues.
 
   ";
-  mail($_POST["verify"],"Information For Material Database", $msg);
+  mail($_POST['verify'],"Information For Material Database", $msg);
 
 }
 
