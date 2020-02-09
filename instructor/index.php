@@ -32,7 +32,7 @@
       <hr>
   		<div class="footer">
         <input type="submit" name="submit" value="Login" class="bton login" />
-        <input type="button" name="submit" value="Register" class="bton register" id = "reg" onclick = "register/"/>
+        <input type="button" name="submit" value="Register" class="bton register" id = "reg" href = "register/"/>
   		</div>
   	</form>
   </div>
