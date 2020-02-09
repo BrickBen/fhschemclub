@@ -67,4 +67,12 @@ if($result = mysqli_query($link, $sql)){
     </style>
   </head>
   <body>
+  <form class="" action="sendEmail.php" method="post">
+    <input type="text" name="verify" value="">
+    <button type="submit" name="button">Verify</button>
+  </form>
+
+
   </body>
+
+  </html>
