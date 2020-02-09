@@ -16,14 +16,13 @@ $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjv
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO unverified_instructors (email) VALUES ('Yo')";
+$sql = "INSERT INTO unverified_instructors (email) VALUES('Yo') ";
 if(mysqli_query($link, $sql)){
     header("Location: index.php?Message=" . urlencode($Message));
     exit;
   }
 
-
-
+mysqli_close($link);
 
 
  ?>
