@@ -34,7 +34,7 @@
       <div class="loader"></div>
   		<div class="content">
           <label for="inp" class="inp">
-            <input type="text" id="user" placeholder="&nbsp;" name = "user">
+            <input type="email" id="user" placeholder="&nbsp;" name = "email" pattern=".+@hse.k12.in.us" required>
             <span class="label">Email</span>
             <span class="border"></span>
           </label>
