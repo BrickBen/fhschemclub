@@ -20,7 +20,7 @@ if($result = mysqli_query($link, $sql)){
         foreach($row as $column => $value) {
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
-            exit;
+            exit();
           }
     }
     header("Location: index.php?Message=" . urlencode($Message));
