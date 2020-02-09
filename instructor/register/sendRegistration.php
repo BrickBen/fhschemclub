@@ -18,9 +18,11 @@ if($link === false){
 }
 $sql = "INSERT INTO unverified_instructors (email) VALUES ('$email')";
 if($result = mysqli_query($link, $sql)){
-    header("Location: index.php?Message=" . urlencode($Message));  }
-}
+    header("Location: index.php?Message=" . urlencode($Message));
+  }
 
+
+mysqli_close($link);
 
 
  ?>
