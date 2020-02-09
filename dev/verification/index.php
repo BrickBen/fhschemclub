@@ -7,7 +7,7 @@ $class = "zui-table";
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "SELECT * FROM 'unverified_instructors'";
+$sql = "SELECT * FROM unverified_instructors";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table class = 'zui-table'>";
