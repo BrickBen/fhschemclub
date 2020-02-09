@@ -35,6 +35,9 @@ if(mysqli_query($link, $sql)){
 
 }
 
+$sql ="DELETE FROM 'unverified_instructors' WHERE email = $user";
+
+
 mysqli_close($link);
 
 
