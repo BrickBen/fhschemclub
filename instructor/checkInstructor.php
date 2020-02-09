@@ -20,10 +20,10 @@ if($result = mysqli_query($link, $sql)){
         foreach($row as $column => $value) {
           if($value == hash('sha256', $user."_".$pass)){
             echo "Success";
-          }else{
-            header("Location: index.php?Message=" . urlencode($Message));
+            exit;
           }
     }
+    header("Location: index.php?Message=" . urlencode($Message));
 }
         }else{
         echo "No records matching your query were found.";
