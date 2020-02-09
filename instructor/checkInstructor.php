@@ -19,11 +19,11 @@ if($result = mysqli_query($link, $sql)){
       while($row = mysqli_fetch_row($result)) {
         foreach($row as $column => $value) {
           if($value == hash('sha256', $user."_".$pass)){
-            inVal = 1;
+            $inVal = 1;
           }
     }
-    if(inval == 1){
-      header("Location: chemicaldata/"); 
+    if($inval == 1){
+      header("Location: chemicaldata/");
     }else{
       header("Location: index.php?Message=" . urlencode($Message));
     }
