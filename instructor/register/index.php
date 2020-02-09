@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>Instructor - Register</title>
-    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="shortcut icon" href="../../images/logo.png">
     <link rel="stylesheet" href="../../css/instructor.css">
   </head>
   <body>
     <div class="container">
   	<form class="form-style" action="sendRegistration.php" method="post">
   		<div class="header">
-        <div class="example-icon" > <img src="../images/logo.png" alt=""> </div>
+        <div class="example-icon" > <img src="../../images/logo.png" alt=""> </div>
         <small>FHS Chemistry Club - Register</small>
         <p id = "return"></p>
   		</div>
