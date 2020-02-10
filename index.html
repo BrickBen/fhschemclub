@@ -14,7 +14,7 @@
               </div>
               <div id="mainListDiv" class="main_list">
                   <ul class="navlinks">
-                      <li><a href="about/">About</a></li>
+                      <li><a id = "about">About</a></li>
                       <li><a href="opportunities/">Opportunities</a></li>
                       <li><a href="calendar/">Calendar</a></li>
                       <li><a href="labs/">Labs</a></li>
@@ -121,23 +121,19 @@
               </svg>
           </div>
       </section>
-      <div style="height: 1000px">
+      <div style="height: 1000px;overflow:hidden;">
           <!-- just to make scrolling effect possible -->
-  			<h2 class="myH2">What is this ?</h2>
-  			<p class="myP">This is a responsive fixed navbar animated on scroll</p>
-  			<p class="myP">I took inspiration from  ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
-  			and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
-  			<p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-  			<p class="myP">Albi</p>
+          <h2 class = "float"></h2>
+          <br><br><br><br>
+  			<h2 class="myH2">Welcome to Fishers Chemistry Club!</h2>
   				<p class="myP">
 
-  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-  				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  				Hi all, we're the Fishers chemistry club and we exist becasue we want to explore the fun side of chemistry outside of the actual classroom. There's lots enjoyable aspects of science that most clases miss in the wave of material to study and cover up with the slog of doing writups, so we aim to fix this. As a club, we're committed to doing chemistry that would often never get a special mention in a class but is fun and interesting none the less. We host labs and demos that anyone can participate in regardless of their science background and prior knowlege every two weeks in the CCA lab on Thursdays. The labs/demos will last between one and two hous after school which we know may be a problem for some members, so no attendance commitment is required and members simply have to register theselves as coming for each date on this site. Any need-to-know material and write-ups for each lab will also be posted on this site and notifications on the remind will tell students what to read so they stay informed on upcoming labs and activities. We expect to have lost of activities, so stay posted!
   			</p>
+        <br><br><br><br><br><br><br>
+        <img src="images/bottom_main.png" alt="" width = "500" height = "200" id = "bottomImage">
       </div>
+    </body>
 
   <!-- Jquery needed -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -147,6 +143,12 @@
 
   <!-- Function used to shrink nav bar removing paddings and adding black background -->
       <script>
+          $("#about").click(function() {
+              $('html,body').animate({
+                  scrollTop: $(".float").offset().top},
+                  'slow');
+          });
+
           $(window).scroll(function() {
               if ($(document).scrollTop() > 50) {
                   $('.nav').addClass('affix');
@@ -215,5 +217,4 @@
           document.querySelector("#navLogo").style.visibility = "hidden";
           document.querySelector("#navLogo").style.display = "none";
       </script>
-  </body>
 </html>
