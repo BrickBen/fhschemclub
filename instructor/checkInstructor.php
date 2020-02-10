@@ -1,6 +1,5 @@
 <?php
 
-
 $user = $_POST['user'];
 $pass = $_POST['pass'];
 $Message = "Invalid Username or Password";
@@ -20,6 +19,7 @@ if($result = mysqli_query($link, $sql)){
         foreach($row as $column => $value) {
           if($value == hash('sha256', $user."_".$pass)){
             $inVal = 1;
+            $_SESSION['user_id'] = $user;
           }
     }
     if($inVal == 1){
