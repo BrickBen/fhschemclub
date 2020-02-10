@@ -7,7 +7,6 @@ if ( isset( $_SESSION['user_id'] ) ) {
     header("Location: chemicaldata/");
 } else {
     // Redirect them to the login page
-    header("Location: ../");
 }
 
  ?>
