@@ -7,6 +7,15 @@ body {
 div.material-table {
   padding: 0;
 }
+.save{
+  border:none !important;
+  color: green;
+  transition: .3s;
+  background-color:#00caaf;
+}
+.save:hover{
+  background-color:lightgreen;
+}
 
 div.material-table .hiddensearch {
   padding: 0 14px 0 24px;
