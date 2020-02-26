@@ -85,7 +85,7 @@ if (is_writable($filename)) {
                           <tbody>
                             <?php
                             $strJsonFileContents = file_get_contents("chemicalData.json");
-                            $array = json_decode($strJsonFileContents, true);
+                            $array = json_decode($strJsonFileContents, false);
                             foreach($array as $item){
                               echo "<tr role='row' class='even' name = '".implode($item)."'>";
                               echo "<td class = 'sorting_1' contenteditable name = '".$item["Chemical Name"]."'>".$item["Chemical Name"]."</td>";
@@ -411,7 +411,7 @@ function onSave(){
     url: 'index.php',
     data: {'variable': myval},
   });
-  setTimeout(function(){location.reload();},100);
+  setTimeout(function(){location.reload();},500);
 
 }
 
