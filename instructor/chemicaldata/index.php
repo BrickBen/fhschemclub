@@ -1,13 +1,13 @@
  <?php
  error_reporting(0);
-// session_start();
-// if ( isset( $_SESSION['user_id'] ) ) {
-//     // Grab user data from the database using the user_id
-//     // Let them access the "logged in only" pages
-// } else {
-//     // Redirect them to the login page
-//     header("Location: ../");
-// }
+session_start();
+if ( isset( $_SESSION['user_id'] ) ) {
+    // Grab user data from the database using the user_id
+    // Let them access the "logged in only" pages
+} else {
+    // Redirect them to the login page
+    header("Location: ../");
+}
 if (isset($_POST["variable"])){
   $filename = 'chemicalData.json';
 $somecontent = $_POST["variable"];
@@ -411,7 +411,7 @@ function onSave(){
     url: 'index.php',
     data: {'variable': myval},
   });
-  setTimeout(function(){location.reload();},500);
+  setTimeout(function(){location.reload();},1000);
 
 }
 
