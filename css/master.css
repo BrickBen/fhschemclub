@@ -140,7 +140,19 @@ animation: fade-in 1.5s
   padding-top: 25%;
   animation: fade-in 1s;
 }
+.calendar{
+  text-align:center;
+  width:100%;
+  top:15vh;
+  display:block;
+  position: relative;
+  animation:fade-in 3s;
 
+}
+iframe{
+  border-radius: 10px;
+  border-color:black;
+}
 .navTrigger {
     display: none;
 }
@@ -425,4 +437,12 @@ animation: fade-in 1.5s
 	.myP {
 		padding:2%;
 	}
+}
+@keyframes fade-in {
+from {
+    opacity:0;
+}
+to {
+    opacity:1;
+}
 }
