@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/master.css">
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="4OATZJfmpcpwA7pRoFiehipFOAm-XySikXgV-Ve3AUs" />
+    <title>Fishers Chemistry Club</title>
+  </head>
+  <body>
+    <nav class="nav">
+          <div class="container">
+              <div class="logo">
+                  <a href="https://fhschemclub.com"> <img src="../images/logo.png" alt="" class = "logo" id = "logo"> <p id = "navLogo">FHS Chemistry Club</p> </a>
+              </div>
+              <div id="mainListDiv" class="main_list">
+                  <ul class="navlinks">
+                      <li><a href = "/">Home</a></li>
+                      <li><a href="../opportunities/">Opportunities</a></li>
+                      <li><a href="../calendar/">Calendar</a></li>
+                      <li><a href="../labs/">Labs</a></li>
+                      <li><a href="../instructor/">Instructors</a></li>
+                  </ul>
+              </div>
+              <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+          </div>
+      </nav>
+      <section class="home" style = "overflow:hidden;">
+        <h2 class="myH2" style = "text-align:center; padding-top:25%;overflow:hidden;">Coming Soon!</h2>
+      </section>
+    </body>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $("#about").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".float").offset().top},
+                'slow');
+        });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+                document.querySelector("#logo").style.visibility = "hidden";
+                document.querySelector("#logo").style.display = "none";
+                document.querySelector("#navLogo").style.visibility = "visible";
+                document.querySelector("#navLogo").style.display = "inline";
+            } else {
+                $('.nav').removeClass('affix');
+                document.querySelector("#logo").style.visibility = "visible";
+                document.querySelector("#logo").style.display = "block";
+                document.querySelector("#navLogo").style.visibility = "hidden";
+                document.querySelector("#navLogo").style.display = "none";
+
+            }
+        });
+
+
+//science animation
+
+
+        document.querySelector("#navLogo").style.visibility = "hidden";
+        document.querySelector("#navLogo").style.display = "none";
+    </script>
+</html>
+
+  </html>
