@@ -148,7 +148,7 @@ if (is_writable($filename)) {
       $sql = "SELECT * FROM change_log";
       if($result = mysqli_query($sqli, $sql)){
           if(mysqli_num_rows($result) > 0){
-              while($row = mysqli_fetch_array($result) && $count >= 25){
+              while($row = mysqli_fetch_array($result) && $count <= 25){
                   echo "<div class = 'record'>";
                   echo "<p>" . $row['user'] . " | " . $row["date"] . " | " . $row["time"] . "</p>";
                   echo "</div><hr>";
