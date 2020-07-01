@@ -260,7 +260,7 @@ div.material-table table td:last-child {
   border-radius: 15px;
   word-wrap: break-word;
   overflow-y:scroll;
-  max-height: 250px;
+  max-height: 240px;
 }
 
 .log hr{
