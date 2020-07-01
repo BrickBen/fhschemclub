@@ -258,6 +258,8 @@ div.material-table table td:last-child {
   margin-right: auto;
   margin-left: auto;
   border-radius: 15px;
+  word-wrap: break-word;
+
 
 }
 
