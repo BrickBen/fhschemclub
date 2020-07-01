@@ -63,7 +63,7 @@ if (is_writable($filename)) {
         <div id="admin" class="col s12">
             <div class="card material-table">
                 <div class="table-header">
-                    <span class="table-title">Chemical Database</span>
+                    <span class="table-title">Welcome, <?php echo $_SESSION['user_id'] ?></span>
                     <div class="actions">
                       <button id="convert-table" onclick = "onSave()" class = "save" style = "border:none; border-radius: 5px;">Save</button>
                         <a href="#add_users" onclick = "newChem()" class="modal-trigger waves-effect btn-flat nopadding"><i class="material-icons">person_add</i></a>
