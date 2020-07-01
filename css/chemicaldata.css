@@ -259,7 +259,7 @@ div.material-table table td:last-child {
   margin-left: auto;
   border-radius: 15px;
   word-wrap: break-word;
-
+  overflow-y: scroll;
 
 }
 
