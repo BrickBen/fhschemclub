@@ -17,7 +17,7 @@ $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjv
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$email."','"Test"','"Test"')";
+$sql = "INSERT INTO `change_log` (`user`, `date`, `time`) VALUES ('".$email."','Test','Test')";
 mysqli_query($link, $sql)
 mysqli_close($link);
 
