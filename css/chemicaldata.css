@@ -255,7 +255,9 @@ div.material-table table td:last-child {
   display:inline-block;
   text-align:center;
   margin: 0 auto;
-  width: 200px;
-
+  width: 600px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 
 }
