@@ -251,7 +251,6 @@ div.material-table table td:last-child {
 /****************************************/
 .log{
   background-color:#fff;
-  font-family: 'Material Icons';
   display:flex;
   text-align:center;
   margin: 0 auto;
@@ -261,4 +260,8 @@ div.material-table table td:last-child {
   margin-left: auto;
   border-radius: 15px;
 
+}
+
+.log hr{
+  width: 300px;
 }

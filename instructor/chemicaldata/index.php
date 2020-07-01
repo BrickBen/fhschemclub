@@ -137,7 +137,9 @@ if (is_writable($filename)) {
     </div>
 
     <div class="log">
-      <p>Testing</p>
+      <p>User | Date | Time</p>
+      <hr>
+      <p>User | Date | Time</p>
     </div>
 
 
