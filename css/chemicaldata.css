@@ -259,8 +259,7 @@ div.material-table table td:last-child {
   margin-left: auto;
   border-radius: 15px;
   word-wrap: break-word;
-  max-height:250px;
-
+  overflow-y:scroll;
 }
 
 .log hr{
