@@ -149,7 +149,7 @@ if (is_writable($filename)) {
           if(mysqli_num_rows($result) > 0){
               while($row = mysqli_fetch_array($result)){
                   echo "<div class = 'record'>";
-                  echo "<p>" . $row['user'] . "|" . $row["date"] . "|" . $row["time"] . "</p>";
+                  echo "<p>" . $row['user'] . " | " . $row["date"] . " | " . $row["time"] . "</p>";
                   echo "</div><hr>";
                 }
                 // Free result set
