@@ -4,6 +4,7 @@ session_start();
 if ( isset( $_SESSION['user_id'] ) ) {
     // Grab user data from the database using the user_id
     // Let them access the "logged in only" pages
+    $email = $_SESSION['user_id'];
 } else {
     // Redirect them to the login page
     header("Location: ../");
@@ -11,6 +12,16 @@ if ( isset( $_SESSION['user_id'] ) ) {
 if (isset($_POST["variable"])){
   $filename = 'chemicalData.json';
 $somecontent = $_POST["variable"];
+//////////////////////////////////////////
+$link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$email."','"Test"','"Test"')";
+mysqli_query($link, $sql)
+mysqli_close($link);
+
+/////////////////////////////////////////
 
 // Let's make sure the file exists and is writable first.
 if (is_writable($filename)) {
@@ -121,6 +132,10 @@ if (is_writable($filename)) {
               </table>
           </div> -->
         </div>
+    </div>
+
+    <div class="log">
+      <p>Testing</p>
     </div>
 
 
