@@ -251,7 +251,7 @@ div.material-table table td:last-child {
 /****************************************/
 .log{
   background-color:#fff;
-  display:flex;
+  /* display:flex; */
   text-align:center;
   margin: 0 auto;
   width: 600px;
