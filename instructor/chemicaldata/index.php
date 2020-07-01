@@ -137,9 +137,13 @@ if (is_writable($filename)) {
     </div>
 
     <div class="log">
-      <p>User | Date | Time</p>
-      <br><hr><br>
-      <p>User | Date | Time</p>
+      <div class="record">
+        wgnwrg
+      </div>
+      <hr>
+      <div class="record">
+        fwefw
+      </div>
     </div>
 
 
