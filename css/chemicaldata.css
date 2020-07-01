@@ -259,5 +259,6 @@ div.material-table table td:last-child {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 15px;
 
 }
