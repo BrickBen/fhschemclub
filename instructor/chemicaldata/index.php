@@ -13,12 +13,13 @@ if (isset($_POST["variable"])){
   $filename = 'chemicalData.json';
 $somecontent = $_POST["variable"];
 //////////////////////////////////////////
+$test = 'ewfwef';
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO `change_log` (`user,date,time`) VALUES ('".$email."','Test','Test')";
-mysqli_query($link, $sql)
+$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$email."','".$test."','".$test."')";
+mysqli_query($link, $sql);
 mysqli_close($link);
 
 /////////////////////////////////////////
