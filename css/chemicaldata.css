@@ -253,7 +253,7 @@ div.material-table table td:last-child {
   background-color:#fff;
   /* display:flex; */
   text-align:center;
-  margin: 0 auto;
+  margin: 10 auto;
   width: 600px;
   margin-right: auto;
   margin-left: auto;
