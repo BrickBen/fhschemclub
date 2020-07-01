@@ -14,7 +14,7 @@ if (isset($_POST["variable"])){
 $somecontent = $_POST["variable"];
 //////////////////////////////////////////
 $date = date("Y/m/d");
-$time = date("h:ia");
+$time = date("h:i a");
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
