@@ -140,7 +140,6 @@ if (is_writable($filename)) {
       <p><i>Change Log</i><p>
       <hr>
       <?php
-      $count = 0;
       $sqli = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
       if($sqli === false){
           die("ERROR: Could not connect. " . mysqli_connect_error());
@@ -148,11 +147,10 @@ if (is_writable($filename)) {
       $sql = "SELECT * FROM change_log";
       if($result = mysqli_query($sqli, $sql)){
           if(mysqli_num_rows($result) > 0){
-              while($row = mysqli_fetch_array($result) && $count <= 25){
+              while($row = mysqli_fetch_array($result)){
                   echo "<div class = 'record'>";
                   echo "<p>" . $row['user'] . " | " . $row["date"] . " | " . $row["time"] . "</p>";
                   echo "</div><hr>";
-                  $count++;
                 }
                 // Free result set
                 mysqli_free_result($result);
