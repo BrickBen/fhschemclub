@@ -252,5 +252,10 @@ div.material-table table td:last-child {
 .log{
   background-color:#fff;
   font-family: 'Material Icons';
-  
+  display:inline-block;
+  text-align:center;
+  margin: 0 auto;
+  width: 200px;
+
+
 }
