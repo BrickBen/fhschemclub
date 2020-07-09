@@ -5,6 +5,16 @@ if ( isset( $_SESSION['user_id'] ) ) {
     // Grab user data from the database using the user_id
     // Let them access the "logged in only" pages
     $email = $_SESSION['user_id'];
+    $teacher = "";
+    $fullName = "";
+    $rawList= file_get_contents("teachers.json");
+    $teacherList = json_decode($rawList,true);
+    foreach ($teacherList as $key => $value) {
+      if(strtolower($value['TEACHER EMAIL']) == $_SESSION['user_id']){
+        $teacher = ucfirst(strtolower($value["FIRST NAME"]));
+        $fullName = ucfirst(strtolower($value["FIRST NAME"])) . " " . ucfirst(strtolower($value["LAST NAME"]));
+      }
+    }
 } else {
     // Redirect them to the login page
     header("Location: ../");
@@ -19,7 +29,7 @@ $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjv
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$email."','".$date."','".$time."')";
+$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$fullName."','".$date."','".$time."')";
 mysqli_query($link, $sql);
 mysqli_close($link);
 
@@ -46,14 +56,6 @@ if (is_writable($filename)) {
   }
 }
 
-$teacher = "";
-$rawList= file_get_contents("teachers.json");
-$teacherList = json_decode($rawList,true);
-foreach ($teacherList as $key => $value) {
-  if(strtolower($value['TEACHER EMAIL']) == $_SESSION['user_id']){
-    $teacher = ucfirst(strtolower($value["FIRST NAME"]));
-  }
-}
 
 
  ?>
