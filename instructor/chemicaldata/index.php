@@ -157,7 +157,7 @@ if (is_writable($filename)) {
       if($sqli === false){
           die("ERROR: Could not connect. " . mysqli_connect_error());
       }
-      $sql = "SELECT * FROM change_log ORDER BY `id` DESC";
+      $sql = "SELECT * FROM change_log ORDER BY id DESC";
       if($result = mysqli_query($sqli, $sql)){
           if(mysqli_num_rows($result) > 0){
               while($row = array_reverse(mysqli_fetch_array($result))){
