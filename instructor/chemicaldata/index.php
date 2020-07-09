@@ -25,11 +25,12 @@ $somecontent = $_POST["variable"];
 //////////////////////////////////////////
 $date = date("Y/m/d");
 $time = date("h:i a");
+$unix = time();
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO `change_log` (`user`,`date`,`time`) VALUES ('".$fullName."','".$date."','".$time."')";
+$sql = "INSERT INTO `change_log` (`user`,`date`,`time`,`unix`) VALUES ('".$fullName."','".$date."','".$time."','".$unix."')";
 mysqli_query($link, $sql);
 mysqli_close($link);
 
