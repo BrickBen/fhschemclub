@@ -157,10 +157,11 @@ if (is_writable($filename)) {
       if($sqli === false){
           die("ERROR: Could not connect. " . mysqli_connect_error());
       }
-      $sql = "SELECT * FROM change_log ORDER BY id DESC";
+      $sql = "SELECT * FROM change_log";
       if($result = mysqli_query($sqli, $sql)){
+          $result = array_reverse($result);
           if(mysqli_num_rows($result) > 0){
-              while($row = array_reverse(mysqli_fetch_array($result))){
+              while($row = mysqli_fetch_array($result)){
                 if($count < 25){
                     echo "<div class = 'record'>";
                     echo "<p>" . $row['user'] . " | " . $row["date"] . " | " . $row["time"] . "</p>";
