@@ -1,0 +1,112 @@
+[
+        {
+            "LAST NAME": "SMITH",
+            "FIRST NAME": "ALEX",
+            "TEACHER EMAIL": "alsmith@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "WALKER",
+            "FIRST NAME": "SARAH",
+            "TEACHER EMAIL": "smoreno@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "CLONE",
+            "FIRST NAME": "MARCY",
+            "TEACHER EMAIL": "mclone@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "REDDAN",
+            "FIRST NAME": "DAN",
+            "TEACHER EMAIL": "dreddan@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "GILL",
+            "FIRST NAME": "JANEEN",
+            "TEACHER EMAIL": "jgill@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "FAGAN",
+            "FIRST NAME": "JIM",
+            "TEACHER EMAIL": "jfagan@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "SURVANT",
+            "FIRST NAME": "KAREN",
+            "TEACHER EMAIL": "ksurvant@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "NOYES",
+            "FIRST NAME": "SUMMER",
+            "TEACHER EMAIL": "SNOYES@HSE.K12.IN.US"
+        },
+        {
+            "LAST NAME": "KAPITAN",
+            "FIRST NAME": "JACOB",
+            "TEACHER EMAIL": "JKAPITAN@HSE.K12.IN.US"
+        },
+        {
+            "LAST NAME": "MILLS",
+            "FIRST NAME": "TYLER",
+            "TEACHER EMAIL": "tmills@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "NAPOLITANO",
+            "FIRST NAME": "CARMEN",
+            "TEACHER EMAIL": "cnapolitano@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "FRENCH",
+            "FIRST NAME": "BRIGHAM",
+            "TEACHER EMAIL": "BFRENCH@HSE.K12.IN.US"
+        },
+        {
+            "LAST NAME": "WARNECKE",
+            "FIRST NAME": "NATHAN",
+            "TEACHER EMAIL": "nwarnecke@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "HENRY",
+            "FIRST NAME": "RICHARD",
+            "TEACHER EMAIL": "rhenry@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "HAGERTY",
+            "FIRST NAME": "KATIE",
+            "TEACHER EMAIL": "KHAGERTY@HSE.K12.IN.US"
+        },
+        {
+            "LAST NAME": "FERGUSON",
+            "FIRST NAME": "HEATHER",
+            "TEACHER EMAIL": "hferguson@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "KUHN",
+            "FIRST NAME": "LANCE",
+            "TEACHER EMAIL": "lkuhn@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "HARTLEY",
+            "FIRST NAME": "MIKE",
+            "TEACHER EMAIL": "mhartley@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "SNYDER",
+            "FIRST NAME": "TAMMY",
+            "TEACHER EMAIL": "tsnyder@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "FRONIUS",
+            "FIRST NAME": "JEFF",
+            "TEACHER EMAIL": "jfronius@hse.k12.in.us"
+        },
+        {
+            "LAST NAME": "GOOD",
+            "FIRST NAME": "LIBBY",
+            "TEACHER EMAIL": "EGOOD@HSE.K12.IN.US"
+        },
+        {
+          "LAST NAME": "LILLEY",
+          "FIRST NAME": "BEN",
+          "TEACHER EMAIL": "LILLEBEN000@HSESTUDENTS.ORG"
+        }
+    ]
