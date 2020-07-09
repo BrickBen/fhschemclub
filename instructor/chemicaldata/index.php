@@ -159,7 +159,6 @@ if (is_writable($filename)) {
       }
       $sql = "SELECT * FROM change_log";
       if($result = mysqli_query($sqli, $sql)){
-          $result = array_reverse($result);
           if(mysqli_num_rows($result) > 0){
               while($row = mysqli_fetch_array($result)){
                 if($count < 25){
