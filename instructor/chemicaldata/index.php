@@ -23,7 +23,7 @@ if (isset($_POST["variable"])){
   $filename = 'chemicalData.json';
 $somecontent = $_POST["variable"];
 //////////////////////////////////////////
-$date = date("Y/m/d");
+$date = date("d/m/Y");
 $time = date("h:i a");
 $unix = time();
 $link = mysqli_connect("localhost", "fhscjvrp_instructor", "hsek12inus", "fhscjvrp_changelog");
